@@ -1,18 +1,53 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f8f7f2"><meta name="description" content="Find information about PaperBil plans. Confirm current prices and limits with the PaperBil team."><title>Pricing | PaperBil</title><link rel="stylesheet" href="styles.css"></head>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f7f2">
+<meta name="description" content="PaperBil subscription plans and pricing for newspaper agencies. Compare customer limits, employee access, and monthly or annual billing.">
+<title>Pricing & Plans | PaperBil</title><link rel="stylesheet" href="styles.css">
+<style>
+.pricing-intro{max-width:760px}.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px;align-items:stretch}
+.pricing-card{display:flex;flex-direction:column;border:1px solid #dfe4dc;border-radius:20px;background:#fff;padding:26px}
+.pricing-card.featured{border:2px solid #19523f;box-shadow:0 12px 30px rgba(25,82,63,.08)}
+.pricing-card h2{margin:4px 0 8px}.pricing-kicker{margin:0 0 10px;color:#267254;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.pricing-amount{margin:14px 0 2px;font-size:clamp(28px,3vw,38px);font-weight:800;line-height:1.15;color:#18221d}
+.pricing-period{color:#657067;font-size:14px}.pricing-year{color:#267254;font-size:13px;font-weight:700;margin-top:7px}
+.pricing-limits{margin:20px 0;padding:0;list-style:none}.pricing-limits li{padding:8px 0;border-bottom:1px solid #edf0eb}
+.pricing-card .button{margin-top:auto;align-self:flex-start}.pricing-note{margin-top:24px;padding:18px 20px;border-radius:14px;background:#f1f3ee;color:#59665d}
+.pricing-note p{margin:6px 0 0}.pricing-subheading{margin-top:42px}
+.enterprise-panel{margin-top:18px;padding:26px;border:1px solid #dfe4dc;border-radius:20px;background:#fff;display:flex;gap:24px;align-items:center;justify-content:space-between}
+.enterprise-panel p{margin-bottom:0}@media(max-width:900px){.pricing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.pricing-grid{grid-template-columns:1fr}.enterprise-panel{align-items:flex-start;flex-direction:column}}
+</style></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container header-inner">
 <a class="brand" href="index.html" aria-label="PaperBil home"><span class="brand-mark" aria-hidden="true">P</span><span>Paper<span class="brand-accent">Bil</span></span></a>
 <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
 <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="features.html">Features</a><a href="pricing.html" aria-current="page">Pricing</a><a href="about.html">About</a><a href="support.html">Support</a><a class="button button-small" href="support.html">Contact us</a></nav>
-</div></header><main id="main"><section class="page-hero"><div class="container"><p class="eyebrow">SIMPLE, TRANSPARENT PLANS</p><h1>A plan that fits the way <em>your agency works.</em></h1><p>We want you to understand what is included before you commit. Confirm current prices, limits and renewal terms with the PaperBil team.</p></div></section>
-<section class="content-section"><div class="container"><div class="content-note"><strong>Pricing is not yet published on this page.</strong> The app's current plan configuration and billing behavior must be verified before we display prices or quotas. This avoids publishing outdated or inaccurate offers.</div><div class="plan-grid" style="margin-top:22px">
-<article class="plan-card"><p class="plan-status">Get started</p><h2>Free access</h2><p>Ask us about the currently available free account and its limits.</p><ul><li>Confirm customer capacity</li><li>Confirm employee access</li><li>Review included workflows</li></ul><a class="button button-quiet" href="support.html">Ask about Free</a></article>
-<article class="plan-card featured"><p class="plan-status">For growing agencies</p><h2>Paid plans</h2><p>Compare current subscription options and account limits with our team.</p><ul><li>Confirm plan capacity</li><li>Confirm billing frequency</li><li>Understand renewal and expiry</li></ul><a class="button" href="support.html">Discuss plans</a></article>
-<article class="plan-card"><p class="plan-status">Larger operations</p><h2>Custom needs</h2><p>For larger customer lists or team requirements, ask about available options.</p><ul><li>Discuss business size</li><li>Confirm feature needs</li><li>Request current terms</li></ul><a class="button button-quiet" href="support.html">Contact us</a></article>
-</div><p style="margin-top:25px;color:#657067;font-size:12px">Before launch, replace these inquiry cards with verified prices, limits, trial duration, grace period, renewal, cancellation and expiry disclosures that match the app and backend.</p></div></section></main><footer class="site-footer"><div class="container footer-main">
+</div></header>
+<main id="main"><section class="page-hero"><div class="container pricing-intro">
+<p class="eyebrow">SIMPLE, TRANSPARENT PLANS</p><h1>Choose a plan for <em>your agency.</em></h1>
+<p>Start with free access, try the full product, or choose a paid plan as your newspaper agency grows.</p>
+</div></section>
+<section class="content-section"><div class="container"><div class="pricing-grid">
+<article class="pricing-card"><p class="pricing-kicker">Get started</p><h2>Free</h2><p>For small agencies getting started with PaperBil.</p><div class="pricing-amount">₹0</div><div class="pricing-period">Free access · no subscription fee</div>
+<ul class="pricing-limits"><li>Up to <strong>75 customers</strong></li><li>Up to <strong>2 employees</strong></li><li>Permanent free access</li></ul><a class="button button-quiet" href="support.html">Ask about Free</a></article>
+<article class="pricing-card"><p class="pricing-kicker">Try PaperBil</p><h2>Trial</h2><p>Explore the product before choosing a paid plan.</p><div class="pricing-amount">₹0</div><div class="pricing-period">30-day trial</div><div class="pricing-year">Plus a 7-day grace period</div>
+<ul class="pricing-limits"><li>Up to <strong>500 customers</strong></li><li>Up to <strong>5 employees</strong></li><li>Full product access during the trial</li></ul><a class="button button-quiet" href="support.html">Ask about Trial</a></article>
+<article class="pricing-card"><p class="pricing-kicker">For small agencies</p><h2>Starter</h2><p>Core tools for managing everyday agency work.</p><div class="pricing-amount">₹299<span style="font-size:15px;font-weight:600"> / month</span></div><div class="pricing-year">₹2,990 / year · save ₹598</div>
+<ul class="pricing-limits"><li>Up to <strong>300 customers</strong></li><li>Up to <strong>3 employees</strong></li><li>Monthly or annual billing</li></ul><a class="button button-quiet" href="support.html">Choose Starter</a></article>
+<article class="pricing-card featured"><p class="pricing-kicker">For growing agencies</p><h2>Growth</h2><p>More capacity as your customer list expands.</p><div class="pricing-amount">₹599<span style="font-size:15px;font-weight:600"> / month</span></div><div class="pricing-year">₹5,990 / year · save ₹1,198</div>
+<ul class="pricing-limits"><li>Up to <strong>1,000 customers</strong></li><li>Up to <strong>10 employees</strong></li><li>Monthly or annual billing</li></ul><a class="button" href="support.html">Discuss Growth</a></article>
+<article class="pricing-card"><p class="pricing-kicker">Larger agencies</p><h2>Agency Pro</h2><p>Higher capacity for established operations.</p><div class="pricing-amount">₹1,299<span style="font-size:15px;font-weight:600"> / month</span></div><div class="pricing-year">₹12,990 / year · save ₹2,598</div>
+<ul class="pricing-limits"><li>Up to <strong>10,000 customers</strong></li><li>Up to <strong>25 employees</strong></li><li>Monthly or annual billing</li></ul><a class="button button-quiet" href="support.html">Discuss Agency Pro</a></article>
+</div>
+<h2 class="pricing-subheading">Need a custom setup?</h2><div class="enterprise-panel"><div><p class="pricing-kicker">For larger operations</p><h2>Enterprise</h2><p>For agencies with larger customer lists or special team requirements. Pricing and limits are agreed individually.</p></div><a class="button button-quiet" href="support.html">Contact us</a></div>
+<div class="pricing-note"><strong>Please review plan terms before subscribing.</strong><p>Prices are in Indian rupees (INR). Annual prices are billed yearly. Customer and employee limits apply per agency. The 7-day grace period follows the 30-day trial; access and feature availability after expiry depend on the account's subscription status and the app's current terms. Contact PaperBil support to confirm renewal, cancellation, expiry, taxes, and the current terms before purchasing.</p></div>
+</div></section></main>
+<footer class="site-footer"><div class="container footer-main">
 <div class="footer-brand-col"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">P</span><span>Paper<span class="brand-accent">Bil</span></span></a><p>Helping newspaper agencies manage their business with more clarity.</p></div>
 <div class="footer-col"><h2>Explore</h2><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="about.html">About us</a></div>
 <div class="footer-col"><h2>Help</h2><a href="support.html">Contact & support</a><a href="delete-account.html">Account deletion</a></div>
 <div class="footer-col"><h2>Legal</h2><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms & conditions</a></div>
-</div><div class="container footer-bottom"><span>© <span data-year>2026</span> PaperBil. All rights reserved.</span><span>Made for newspaper agencies.</span></div></footer><script src="script.js" defer></script></body></html>
+</div><div class="container footer-bottom"><span>© <span data-year>2026</span> PaperBil. All rights reserved.</span><span>Made for newspaper agencies.</span></div></footer>
+<script src="script.js" defer></script></body></html>
