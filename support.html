@@ -21,9 +21,51 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
 <link rel="stylesheet" href="styles.css">
 <style>
-.button-whatsapp{background:#128c7e;color:#fff;border-color:#128c7e}
-.button-whatsapp:hover{background:#075e54;color:#fff;transform:translateY(-1px)}
-.button-whatsapp svg{width:18px;height:18px;flex-shrink:0}
+.contact-card a.button-whatsapp,
+.contact-card a.button-whatsapp:visited,
+.contact-card a.button-whatsapp:hover,
+.contact-card a.button-whatsapp:focus-visible,
+.contact-card a.button-whatsapp:active {
+  background: #128c7e;
+  border-color: #128c7e;
+  color: #ffffff;
+}
+.contact-card a.button-whatsapp:hover,
+.contact-card a.button-whatsapp:active {
+  background: #075e54;
+  border-color: #075e54;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+.contact-card a.button-whatsapp svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: #ffffff;
+  color: #ffffff;
+}
+.contact-card a.button-whatsapp span {
+  color: #ffffff;
+}
+.contact-card a.button:not(.button-light):not(.button-whatsapp),
+.contact-card a.button:not(.button-light):not(.button-whatsapp):visited,
+.contact-card a.button:not(.button-light):not(.button-whatsapp):hover,
+.contact-card a.button:not(.button-light):not(.button-whatsapp):focus-visible,
+.contact-card a.button:not(.button-light):not(.button-whatsapp):active {
+  background: var(--green);
+  border-color: var(--green);
+  color: #ffffff;
+}
+.contact-card a.button:not(.button-light):not(.button-whatsapp):hover,
+.contact-card a.button:not(.button-light):not(.button-whatsapp):active {
+  background: #103d2d;
+  border-color: #103d2d;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+.contact-card a.button:not(.button-light):not(.button-whatsapp) span {
+  color: #ffffff;
+}
 </style>
 </head>
 <body>
